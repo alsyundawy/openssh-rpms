@@ -14,7 +14,7 @@ OpenSSH 是一个免费的 SSH 连接工具，广泛用于安全的远程登录�
 
 ## 安装(以CentOS7为例）
 
- 从 [Release](https://github.com/Nugent1a/OpenSSH-rpms/releases) 下载合适的版本
+ 从 [Release](https://github.com/nugent1a/OpenSSH-rpms/releases) 下载合适的版本
 
 ```bash
 #解压
