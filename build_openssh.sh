@@ -15,7 +15,7 @@ echo '==========================================================================
 #系统版本
 OS=$(grep '^NAME=' /etc/os-release | sed 's/^NAME="\([^"]*\)"/\1/')
 #OpenSSH版本
-OPENSSH_VERSION=9.9p2
+OPENSSH_VERSION=10.0p1
 
 read -p '
 帮助:
