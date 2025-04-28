@@ -200,6 +200,7 @@ tar -xf openssh-$OPENSSH_VERSION.tar.gz openssh-$OPENSSH_VERSION/contrib/redhat/
 mv openssh-$OPENSSH_VERSION /root/rpmbuild/SPECS
 #配置spec编译文件
 cd /root/rpmbuild/SPECS/openssh-$OPENSSH_VERSION/contrib/redhat/
+sed -i '/^%files$/a\/usr/libexec/openssh/sshd-auth' openssh.spec
 sed -i '/# OpenSSH privilege separation requires a user & group ID/a\%global debug_package %{nil}' openssh.spec
 sed -i -e "s/%global no_gnome_askpass 0/%global no_gnome_askpass 1/g" openssh.spec
 sed -i -e "s/%global no_x11_askpass 0/%global no_x11_askpass 1/g" openssh.spec
